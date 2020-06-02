@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.liudukun.dkchat">
+
+
+    <application
+
+        android:name=".DKApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <!--// main -->
+        <activity
+            android:name=".activity.MainActivity" android:screenOrientation="portrait" tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--// login-->
+        <activity android:name=".activity.LoginActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.LaunchActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.ChatActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.AdminCreateGroupActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.GroupInfoActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.UserInfoActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.AboutActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.AdminCheckGroupsActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.AdminLoginActivity"  android:screenOrientation="behind" />
+        <activity android:name=".activity.AdminNoticeSetActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.AdminReportListActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.AdminServerInfoActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.AdminUserManagetActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.AdminListActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.BonusDetailActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.BonusSendActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.ChangePhoneActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.ChangePhoneVerifyActivity" android:screenOrientation="behind" />
+        <activity android:name=".utils.DKWebActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.EditUserInfoActivity"  android:screenOrientation="behind"  android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.FeedbackActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.FriendListActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.GiftLogActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.GiftSendActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.GroupApplyActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.GroupApplyFromUserActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.GroupApplyListActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.GroupApplyTicketListActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.InterestSelectActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.PrivacyActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.RandChatActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.RechargeActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.ReportActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.ScoreGetActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.SelectUserActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.SettingActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.CommentedSubjectActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.CommentDetailActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.SubjectDetailActivity" android:screenOrientation="behind"  android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.SubjectForUserActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.SubjectSendActivity" android:screenOrientation="behind"  android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".activity.UserGiftActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.UserOrdersActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.UserRankActivity" android:screenOrientation="behind" />
+        <activity android:name=".activity.UserRankIntroduceActivity" android:screenOrientation="behind" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3033562866094437~5037847021"/>
+<!--qq-->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:noHistory="true"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1106317396" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name=".activity.WXEntryActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:exported="true"
+            android:taskAffinity="com.liudukun.dkchat"
+            android:launchMode="singleTask">
+        </activity>
+
+
+    </application>
+
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+
+
+</manifest>

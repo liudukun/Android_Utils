@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_VI">#4CD6DE</color>
+    <color name="red_VI">#d53731</color>
+    <color name="white_VI">#fefefc</color>
+    <color name="black_VI">#051627</color>
+    <color name="orange_VI">#f3a241</color>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+
+    <color name="gray">#666666</color>
+    <color name="gray_light">#999999</color>
+    <color name="gray_light_half">#bbbbbb</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="black">#000000</color>
+    <color name="clear">#00000000</color>
+
+
+    <color name="list_background">#ededed</color>
+</resources>
